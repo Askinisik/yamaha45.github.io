@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AŞKIN MOTORCYCLE</title>
+        <link rel="stylesheet" href="stil.css"> 
+    </head>
+    <body>
+        <div id="container">
+            <header></header>
+            <nav>
+              
+                <a href="#"><div>Anasayfa</div></a>
+                <a href="modeller.html"><div>Modeller</div></a>
+                <a href="#"><div>Bayilerimiz</div></a>
+                <a href="#"><div>Aksesuar</div></a>
+                <a href="#"><div>Hakkımızda</div></a>
+                <a href="#"><div>İletişim</div></a>
+              
+            </nav>
+            <section>
+                <aside>
+                    <div>
+                        <img src="resimler/r25kutu.jpg" width="150" height="190">
+                    </div>
+
+                    <div>
+                        <img src="resimler/r6kutu.webp" width="150" height="190px">
+                    </div>
+
+                    <div>
+                        <img src="resimler/r1kutu.jpg" width="150px" height="190px">
+                    </div>
+                </aside>
+                <article>
+                    <div class="orta">
+                        <div class="slideshow-container">
+            
+                            <div class="mySlides fade">
+                              <div class="numbertext">1 / 4</div>
+                              <img src="resimler/2022-Yamaha-YZF-R250-EU-Detail-011-03_Tablet.jpg"  class="slfoto">
+                              <div class="text">250CC OLAN MOTORLARIMIZ</div>
+                            </div>
+                              
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">2 / 4</div>
+                              <img src="resimler/500cc.jpg"  class="slfoto">
+                              <div class="text">250CC'DEN 500CC'YE KADAR OLAN MOTORLARIMIZ</div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <div class="numbertext">3/ 4</div>
+                              <img src="resimler/yamaha-r6-2020.jpg" class="slfoto" >
+                              <div class="text">500CC'DEN 1000CC'YE KADAR OLAN MOTORLARIMIZ</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">4 / 4</div>
+                              <img src="resimler/2015_Yamaha_YZF-R1_crop.jfif" class="slfoto" >
+                              <div class="text">1000CC VE ÜZERİ OLAN MOTORLARIMIZ</div>
+                            </div>
+                            
+                            
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide(1)"></span> 
+                              <span class="dot" onclick="currentSlide(2)"></span> 
+                              <span class="dot" onclick="currentSlide(3)"></span>
+                              <span class="dot" onclick="currentSlide(4)"></span>  
+                            </div>
+                            
+                            <script>
+                            let slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              let i;
+                              let slides = document.getElementsByClassName("mySlides");
+                              let dots = document.getElementsByClassName("dot");
+                              if (n > slides.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                            }
+                            
+                            
+                            </script>
+                </article>
+                
+            </section>
+            <footer>
+                <marquee direction="right">Açılışımıza Özel Tüm Motorlarda %25 indirim!!!!!</marquee>
+            </footer>
+        </div>
+
+    </body>
+</html>
